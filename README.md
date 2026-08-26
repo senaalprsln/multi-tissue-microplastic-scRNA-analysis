@@ -1,6 +1,6 @@
-# cross-tissue-microplastic-scRNAseq
+# multi-tissue-microplastic-scRNAseq-analysis
 
-**Cross-Tissue Single-Cell Transcriptomic Analysis of Microplastic Exposure in Mouse Kidney, Lung, and Aorta**
+**Multi-Tissue Single-Cell Transcriptomic Analysis of Microplastic Exposure in Mouse Kidney, Lung, and Vessel**
 
 **Sena Alparslan**
 
