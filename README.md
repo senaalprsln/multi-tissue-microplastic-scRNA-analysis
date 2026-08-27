@@ -133,18 +133,28 @@ scripts/10_immune_DEG.py
 scripts/11_immune_subtype_annotation.py
 scripts/12_DEG_summary.py
 ```
-Performs Wilcoxon rank-sum differential expression testing (control vs.
-each exposure condition) within each tissue/immune-cell-type combination,
-resolves finer immune subtypes, and summarizes up- and down-regulated gene
-lists for downstream functional enrichment analysis (e.g., g:Profiler).
+Performs 3-way Wilcoxon rank-sum differential expression testing (nano vs control, 
+micro vs control, and micro vs nano) within each tissue/immune-cell-type combination, 
+resolves finer immune subtypes, and summarizes up- and down-regulated gene lists for 
+downstream functional enrichment analysis (e.g., g:Profiler).
+
+### 7. Stress and Differential Expression Summary
+```
+scripts/13_stress_and_deg_summary.py
+```
+Evaluates and prints effect size rankings based on significant DEG counts 
+across all 3 comparison pairs and calculates biological stress module scores 
+(Apoptosis, Inflammation, and Oxidative Stress) grouped by exposure condition per tissue.
 
 ## Output
 
-Differentially expressed gene lists (up- and down-regulated, per tissue,
-cell type, and exposure comparison) are printed to console by
-`12_DEG_summary.py` and are intended for use as input to external pathway
-enrichment tools. Intermediate annotated AnnData objects are saved at each
-stage in `processed/` for inspection or re-use.
+Differentially expressed gene lists (up- and down-regulated, per tissue, cell type, 
+and 3-way exposure comparison) along with effect size rankings are printed to the 
+console by 12_DEG_summary.py and 13_stress_and_deg_summary.py, and are intended 
+for use as input to external pathway enrichment tools. Additionally, biological 
+stress module scores (Apoptosis, Inflammation, and Oxidative Stress) are calculated 
+and summarized across tissues, while intermediate annotated 
+AnnData objects are saved at each stage in processed/ for inspection or re-use.
 
 ## Methods
 
@@ -153,4 +163,4 @@ quality control, integration, annotation, and statistical methodology.
 
 ---
 
-For questions regarding the data and code, please contact **[e-posta adresiniz]**.
+For questions regarding the data and code, please contact **[senaalparslan10@gmail.com]**.
