@@ -45,7 +45,7 @@ downloaded separately from their original public sources:
 
 ## Requirements
 
-This pipeline requires Python (3.10) with the following packages:
+This pipeline requires Python (3.12) with the following packages:
 
 - `scanpy`
 - `anndata`
